@@ -1,5 +1,3 @@
-import './titleBanners.css'
-
 function TitleBanners({title}) {
     return (
         <h1 className="title-banner">

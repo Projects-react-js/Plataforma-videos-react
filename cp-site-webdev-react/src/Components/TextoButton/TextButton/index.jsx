@@ -1,8 +1,6 @@
-import './textButton.css'
-
 function TextButton({textButton}) {
     return (
-        <button type="button">
+        <button type="button" id="btn_banner">
             {textButton}
         </button>
       );

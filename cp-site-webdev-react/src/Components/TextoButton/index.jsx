@@ -1,4 +1,3 @@
-import './textoButton.css';
 import TitleBanners from './TitleBanners/index.jsx'
 import DescriptionBanners from './DescriptionBanners/index.jsx'
 import TextButton from './TextButton/index.jsx';
