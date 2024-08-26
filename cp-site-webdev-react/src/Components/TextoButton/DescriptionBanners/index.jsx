@@ -1,6 +1,6 @@
 function DescriptionBanners({description}) {
     return (
-        <p className="description">
+        <p className="description-banner">
             {description}
         </p>
       );

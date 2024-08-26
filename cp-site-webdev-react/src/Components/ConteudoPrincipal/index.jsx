@@ -1,10 +1,11 @@
 import TextoButton from "../TextoButton";
-
+import ImageBanner from "../TextoButton/ImageBanner";
 
 function ConteudoPrincipal() {
     return (
-        <section>
+        <section id='banner'>
           <TextoButton/>
+          <ImageBanner/>
         </section>
       );
 }
