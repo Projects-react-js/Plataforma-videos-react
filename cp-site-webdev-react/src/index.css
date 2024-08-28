@@ -21,3 +21,24 @@ section {
   justify-content: space-between;
   gap: 25px;
 }
+
+#container_banner {
+  width: 100%;
+  display: flex;
+}
+
+.img-banner-home {
+  width: 52%;
+}
+
+.images-sobre {
+  display: flex;
+  gap: 20px;
+}
+
+#container-banner-sobre {
+  display: flex;
+  justify-content: space-between;
+}
+
+
