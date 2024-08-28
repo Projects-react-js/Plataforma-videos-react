@@ -1,56 +1,42 @@
-#container_banner {
-    width: 100%;
-    padding-top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .texts {
-    width: 45%;
-  }
-  
-  .texts {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 32px
-  }
-  
-  .texts .title {
-    font-size: 3.75rem;
-  }
-  
-  .texts .description {
-    width: 70%;
-    font-size: 1.5rem;
-    line-height: 31.65px;
-  }
-  
-  .texts button {
-    border: none;
-    border-radius: 40px;
-    background-color: #333333;
-    padding: 20px 50px;
-    font-size: 1.375rem;
-    font-family: "Roboto Mono", sans-serif;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.5s ease;
-  }
-  
-  
-  .texts button:hover {
-    background-color: #707070;
-  }
-  
-  .img-banner {
-    width: 52%;
-    text-align: center;
-  }
-  
-  .img-banner .hero-image {
-    width: 100%;
-  }
+.texts {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 32px
+}
+
+.texts .title {
+  font-size: 3.75rem;
+}
+
+.texts .description {
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 31.65px;
+}
+
+.texts button {
+  border: none;
+  border-radius: 40px;
+  background-color: #333333;
+  padding: 20px 50px;
+  font-size: 1.375rem;
+  font-family: "Roboto Mono", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.5s ease;
+}
+
+
+.texts button:hover {
+  background-color: #707070;
+}
+
+.img-banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
