@@ -1,0 +1,41 @@
+#container_card {
+    width: 25%;
+    padding: 16px 34px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#container_card .number-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#container_card .number-img .number {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+#container_card .texts {
+    width: 100%;    
+    display: flex;
+    gap: 8px;
+}
+
+#container_card .texts .title-card {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+#container_card .texts .description-card {
+    width: 100%;
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 23.74px;
+    color: #333;
+}
