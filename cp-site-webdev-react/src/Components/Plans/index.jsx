@@ -1,9 +1,9 @@
-import '../plans.css'
+export default function Plan(){
 
-function Plans() {
-    return (
-        <></>
-      );
+    return(
+        <>
+        
+        </>
+
+    )
 }
-
-export default Plans;

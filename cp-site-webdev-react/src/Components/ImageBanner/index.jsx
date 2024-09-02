@@ -1,16 +1,14 @@
-import PropTypes from 'prop-types';
+export default function ImageBanner( { informationsImage }) {
 
-function ImageBanner({ urlImage, textAlt }) {
-    return (
-        <div className="img-banner"> 
-            <img src={urlImage} alt={textAlt} />
-        </div>
-    );
+
+    return(
+        <>
+        {
+            informationsImage.map(toImage => (
+        <img src={toImage.search} alt={toImage.altImg} />
+        ))
+        }
+        </>
+
+    )
 }
-
-ImageBanner.propTypes = {
-    urlImage: PropTypes.string.isRequired,
-    textAlt: PropTypes.string.isRequired
-}
-
-export default ImageBanner;
