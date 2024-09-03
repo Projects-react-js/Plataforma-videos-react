@@ -108,3 +108,28 @@ section {
   border-radius: 2px;
   height: 60vh;
 }
+
+
+#container_plans {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F2F2;
+}
+
+#container_plans .plans {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px
+  
+}
+
+#container_plans .title-section {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 23px;
+
+}
