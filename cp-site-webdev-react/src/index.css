@@ -15,30 +15,121 @@ section {
   padding: 5% 4%;
 }
 
-#cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
+#title_banner {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 74px;
 }
 
 #container_banner {
   width: 100%;
+  padding-top: 0;
+
   display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
-.img-banner-home {
-  width: 52%;
-}
-
-.images-sobre {
+#container_cards {
+  width: 100%;
   display: flex;
-  gap: 20px;
-}
-
-#container-banner-sobre {
-  display: flex;
+  gap: 2%;
   justify-content: space-between;
 }
 
 
+#container_contato {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.texts-redesSociais {
+  width: 45%;
+  
+}
+
+.container-form {
+  width: 45%;
+}
+
+.texts-redesSociais {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.content-redesSociais {
+  display: flex;
+  gap: 40.52px;
+}
+
+.text-input {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 36.93px;
+}
+
+.container-form input {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-send {
+  display: flex;
+  justify-content: end;
+}
+
+#button_send {
+  width: 40%;
+  padding: 10px 50px;
+  background-color: #6975E8;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  line-height: 18.46px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thread {
+  border: 2px solid #B9B7B7;
+  border-radius: 2px;
+  height: 60vh;
+}
+
+
+#container_plans {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F2F2;
+}
+
+#container_plans .plans {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px
+  
+}
+
+#container_plans .title-section {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 23px;
+
+}

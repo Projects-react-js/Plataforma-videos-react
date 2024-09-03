@@ -7,10 +7,6 @@
   gap: 32px
 }
 
-.texts .title {
-  font-size: 3.75rem;
-}
-
 .texts .description {
   width: 80%;
   font-size: 1.5rem;
@@ -33,10 +29,4 @@
 
 .texts button:hover {
   background-color: #707070;
-}
-
-.img-banner {
-  width: 100%;
-  height: auto;
-  text-align: center;
 }

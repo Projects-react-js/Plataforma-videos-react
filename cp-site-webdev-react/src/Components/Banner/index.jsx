@@ -1,28 +1,21 @@
-import PropTypes from 'prop-types';
+import TitleBanner from "../TitleBanners";
 import './banner.css'
 
-function Banner({textTitle, textDescription, textButton}) {
-    return (
+export default function Banner({ textsBannerAll }){
+    
+    return(
+        <>
+        {
+            textsBannerAll.map(textsBanner => (
+
         <div className="texts">
-            <h1 className="title">
-                {textTitle}
-            </h1>
+            <TitleBanner title={textsBanner.text}/>
+            <p className="description">{textsBanner.textDescription}</p>
 
-            <p className="description">
-                {textDescription}
-            </p>
-
-            <button id="btn_default" type="button" >
-                {textButton}
-            </button>
+            <button id='btn_default' type="button">{textsBanner.textButton}</button>
         </div>
-      );
+        ))
+        }
+        </>    
+    )
 }
-
-Banner.propTypes = {
-    textTitle: PropTypes.string.isRequired,
-    textDescription: PropTypes.string.isRequired,
-    textButton: PropTypes.string.isRequired,
-}
-
-export default Banner;

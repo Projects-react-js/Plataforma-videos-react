@@ -1,40 +1,34 @@
-import PropTypes from 'prop-types';
 import './card.css'
 
-function Card({profileImage, numberCard, titleCard, descriptionCard, backgroundColor, textAltCard}) {
+export default function Card({ informationsCard }) {
     return (
-        <div id="container_card" style={{backgroundColor: backgroundColor}}>
-          <div className="number-img">
-            <div className="number">
-              {numberCard}
+      <>
+      {
+        informationsCard.map(information =>(
+          <div id="container_card" style={{backgroundColor: information.backgroundColor}}>
+            <div className="number-img">
+              <div className="number">
+                {information.number}
+              </div>
+
+              <div className="profileImage">
+                <img src={information.profileImage} alt={information.textAltCard} />
+              </div>
             </div>
 
-            <div className="profileImage">
-              <img src={profileImage} alt={textAltCard} />
+            <div className="texts">
+              <h2 className="title-card">
+                {information.titleCard}
+              </h2>
+
+              <p className="description-card">
+                {information.descriptionCard}
+              </p>
             </div>
           </div>
-
-          <div className="texts">
-            <h2 className="title-card">
-              {titleCard}
-            </h2>
-
-            <p className="description-card">
-              {descriptionCard}
-            </p>
-          </div>
-        </div>
-
-      );
+        ))
+        
+      }
+      </>
+  );
 }
-
-Card.propTypes = {
-  numberCard: PropTypes.number.isRequired,
-  profileImage: PropTypes.string.isRequired,
-  titleCard: PropTypes.string.isRequired,
-  descriptionCard: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string.isRequired,
-  textAltCard: PropTypes.string.isRequired
-}
-
-export default Card;
