@@ -30,3 +30,36 @@
 .texts button:hover {
   background-color: #707070;
 }
+
+@media screen and (max-width: 600px) {
+
+  .texts {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .texts .description {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .texts button {
+    font-size: 1.05rem;
+    padding: 6px 10px;
+  }
+
+  #container_banner {
+    flex-direction: column;
+    gap: 60px;
+
+  }
+
+  #container_banner img {
+    width: 40%;
+    align-items: center;
+  }
+
+  .image-banner {
+    justify-content: center;
+  }
+}

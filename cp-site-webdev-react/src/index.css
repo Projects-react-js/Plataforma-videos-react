@@ -21,6 +21,8 @@ section {
   line-height: 74px;
 }
 
+
+
 #container_banner {
   width: 100%;
   padding-top: 0;
@@ -132,4 +134,50 @@ section {
   text-align: center;
   margin-bottom: 23px;
 
+}
+
+
+@media screen and (max-width: 700px) {
+  #title_banner {
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  .image-banner {
+    display: none;
+  }
+
+  #container_plans .plans {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  #container_contato {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  #container_contato .thread {
+    display: none;
+  }
+
+  .texts-redesSociais {
+    width: 100%;
+  }
+
+  .texts-redesSociais img {
+    width: 10%;
+  }
+
+  .container-form {
+    width: 100%;
+  }
+
+  .text-input {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 36.93px;
+  }
+  
 }
