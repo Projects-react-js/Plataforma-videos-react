@@ -6,10 +6,12 @@ import './index.css'
 
 import Sobre from '../src/Pages/Sobre.jsx'
 import Contato from '../src/Pages/Contato.jsx'
+import PageNotFound from './Pages/PageNotFound.jsx';
 
 import ConteudoPrincipal from './Components/ConteudoPrincipal/index.jsx'
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,8 @@ const router = createBrowserRouter([
     children: [
       {index: true, element: <ConteudoPrincipal/>},
       {path: 'sobre', element: <Sobre/>},
-      {path: 'contato', element: <Contato/>}
+      {path: 'contato', element: <Contato/>},
+      {path: '*', element: <PageNotFound/>}
     ]
   }
 ])
